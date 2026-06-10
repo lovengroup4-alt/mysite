@@ -1,24 +1,42 @@
-// Fake login (you can upgrade to Firebase later)
+// ======================
+// FAKE STORAGE (TEMP ONLY)
+// ======================
+let users = [];
+
+// ======================
+// SIGN UP
+// ======================
+function signUp() {
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
+
+    users.push({ email, password });
+
+    alert("Account created!");
+    window.location.href = "login.html";
+}
+
+// ======================
+// LOGIN
+// ======================
 function login() {
-    alert("Google Login will be added with Firebase Authentication");
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
+
+    let user = users.find(u => u.email === email && u.password === password);
+
+    if (user) {
+        alert("Login success!");
+        window.location.href = "dashboard.html";
+    } else {
+        alert("Wrong email or password");
+    }
 }
 
-// Stripe payment (safe method - no card handling by you)
+// ======================
+// STRIPE PAYMENT (REAL LINK)
+// ======================
 function buyCourse() {
-    alert("Redirecting to secure payment (Stripe)");
-
-    // In real version you would redirect to Stripe Checkout:
-    window.location.href = "https://stripe.com";
+    // Replace with real Stripe checkout link later
+    window.location.href = "https://buy.stripe.com/test_XXXXXX";
 }
-const courses = [
-  {
-    title: "Cybersecurity Basics",
-    video: "https://youtube.com",
-    description: "Learn hacking basics"
-  },
-  {
-    title: "Network Security",
-    video: "https://youtube.com",
-    description: "Learn networks"
-  }
-];
