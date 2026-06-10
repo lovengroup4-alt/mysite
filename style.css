@@ -32,3 +32,38 @@ button {
     padding: 20px;
     border-radius: 10px;
 }
+body {
+    font-family: Arial;
+    background: #0f172a;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.container {
+    margin-top: 80px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;  /* 👈 THIS makes it downward */
+    align-items: center;
+    gap: 10px;
+}
+
+input {
+    width: 250px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    width: 270px;
+    padding: 10px;
+    background: #3b82f6;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
