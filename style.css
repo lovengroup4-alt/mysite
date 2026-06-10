@@ -1,5 +1,9 @@
+/* =======================
+   GLOBAL STYLES
+======================= */
+
 body {
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     background: #0f172a;
     color: white;
     margin: 0;
@@ -7,63 +11,95 @@ body {
     text-align: center;
 }
 
-.container {
-    margin-top: 100px;
-}
-
-input {
-    padding: 10px;
-    margin: 5px;
-    width: 200px;
-}
-
-button {
-    padding: 10px 20px;
-    background: #3b82f6;
-    border: none;
-    color: white;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-.card {
-    background: #1e293b;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 10px;
-}
-body {
-    font-family: Arial;
-    background: #0f172a;
-    color: white;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
+/* =======================
+   CONTAINER
+======================= */
 
 .container {
-    margin-top: 80px;
+    margin-top: 60px;
 }
+
+/* =======================
+   FORM LAYOUT (VERTICAL)
+======================= */
 
 .form {
     display: flex;
-    flex-direction: column;  /* 👈 THIS makes it downward */
+    flex-direction: column; /* downward layout */
     align-items: center;
-    gap: 10px;
+    gap: 12px;
+    margin-top: 20px;
 }
+
+/* =======================
+   INPUTS
+======================= */
 
 input {
-    width: 250px;
-    padding: 10px;
-    border-radius: 5px;
+    width: 280px;
+    padding: 12px;
+    border-radius: 8px;
     border: none;
+    outline: none;
+    font-size: 14px;
 }
 
+/* focus effect */
+input:focus {
+    border: 2px solid #3b82f6;
+}
+
+/* =======================
+   BUTTONS
+======================= */
+
 button {
-    width: 270px;
-    padding: 10px;
+    width: 300px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
     background: #3b82f6;
     color: white;
-    border: none;
+    font-size: 16px;
     cursor: pointer;
+    transition: 0.3s;
 }
+
+button:hover {
+    background: #2563eb;
+}
+
+/* =======================
+   CARDS (COURSES)
+======================= */
+
+.card {
+    background: #1e293b;
+    margin: 20px auto;
+    padding: 20px;
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* =======================
+   LINKS
+======================= */
+
+a {
+    color: #60a5fa;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* =======================
+   HEADINGS
+======================= */
+
+h1, h2, h3 {
+    margin-top: 20px;
+}
+
