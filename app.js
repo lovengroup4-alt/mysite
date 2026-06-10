@@ -10,3 +10,15 @@ function buyCourse() {
     // In real version you would redirect to Stripe Checkout:
     window.location.href = "https://stripe.com";
 }
+const courses = [
+  {
+    title: "Cybersecurity Basics",
+    video: "https://youtube.com",
+    description: "Learn hacking basics"
+  },
+  {
+    title: "Network Security",
+    video: "https://youtube.com",
+    description: "Learn networks"
+  }
+];
